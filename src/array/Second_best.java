@@ -37,7 +37,7 @@ public class Second_best {
             if(arr[i] < smaller){
                SecS = smaller;
                smaller = arr[i];
-            } else if (arr[i]<smaller && arr[i] > SecS ) {
+            } else if (arr[i]<SecS && arr[i] > smaller ) {
                 SecS = arr[i];
             }
         }
