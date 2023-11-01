@@ -7,7 +7,9 @@ public class Second_best {
 
         int []arr ={19,33,34,45,89};
         int sconMax = SecondB(arr);
+        int sconMin = SecondS(arr);
         System.out.println(sconMax);
+        System.out.println(sconMin);
 
     }
 
@@ -24,6 +26,23 @@ public class Second_best {
             }
             }
         return Secmax;
+        }
+
+        public static int SecondS(int[]arr){
+
+        int smaller = Integer.MAX_VALUE;
+        int SecS = Integer.MAX_VALUE;
+
+        for(int i = 0; i<arr.length;i++){
+            if(arr[i] < smaller){
+               SecS = smaller;
+               smaller = arr[i];
+            } else if (arr[i]<smaller && arr[i] > SecS ) {
+                SecS = arr[i];
+            }
+        }
+
+            return SecS;
         }
 
 
