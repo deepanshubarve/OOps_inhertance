@@ -5,6 +5,6 @@ public class Second_best {
 
         int []n ={19,33,434,545,};
 
-        System.out.println(n);
+
     }
 }
