@@ -1,15 +1,29 @@
 package array;
 
-import java.util.Arrays;
-
 public class DuplicateArray {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 1, 2};
 
-        for(int i =1;i<arr.length;i++){
-            if(arr[i-1] < arr[i]){
-                System.out.println(arr[i]);
+        int[] arr = {1,2,3,2,1};
+
+        int k=0;
+        int count=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            int temp=arr[i];
+            if(count==0)
+            {
+                for(int j=i+1;j<arr.length;j++)
+                {
+                    if (temp==arr[j]){
+                        count=1;
+                        k=arr[i];
+                        break;}
+
+                }
+                System.out.println(k);
+
             }
+
         }
 
     }
