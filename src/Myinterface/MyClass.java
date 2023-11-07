@@ -1,7 +1,9 @@
 package Myinterface;
 
 
-
+interface Myinterface2{
+    void print();
+}
 interface Myinterface{
 
     int MAX_VALUE = 100;
@@ -10,9 +12,14 @@ interface Myinterface{
     int hello2();//Abstract Method
 
     void hello3();
+
+    //after Java 1.8
+    default void m2(){
+        System.out.println("demo do humko....");
+    }
 }
 
- class DemoAbs implements Myinterface{
+ class DemoAbs implements Myinterface,Myinterface2{
 
      @Override
      public void hello1() {
@@ -27,6 +34,11 @@ interface Myinterface{
 
      @Override
      public void hello3() {
+         System.out.println("Ram Lakshman janki");
+     }
+
+     @Override
+     public void print() {
 
      }
  }
