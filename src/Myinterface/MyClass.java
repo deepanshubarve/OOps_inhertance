@@ -51,5 +51,6 @@ public class MyClass {
         demoAbs.hello1();
         demoAbs.hello2();
         demoAbs.hello3();
+        demoAbs.m2();
     }
 }
