@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class SetTest {
@@ -20,11 +21,33 @@ public class SetTest {
         //add duplicate
         num.add(20);
 
-        //how to check element in collection
-
+        //checking element in collection
         boolean res10 = num.contains(10);
         boolean res99 = num.contains(99);
         System.out.println("Contain 10 "+ res10);
         System.out.println("Contain 99 "+ res99);
+
+        //Removing a element
+        boolean res = num.remove(10);
+        System.out.println(res);
+        System.out.println(num);
+
+        int size = num.size();
+        System.out.println(size);
+
+        //Q Iterator
+        Iterator<Integer> it = num.iterator();
+        while (it.hasNext()){
+            Integer next = it.next();
+            System.out.println(next);
+        }
+
+        System.out.println(num.isEmpty());
+
+        //clear the set
+        num.clear();
+        System.out.println(num);
+
+        System.out.println(num.isEmpty());
     }
 }
