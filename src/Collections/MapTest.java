@@ -29,6 +29,7 @@ public class MapTest {
         System.out.println(RemovedVaule);
         System.out.println(NewMap);
         System.out.println("size of map" + sizeofmap);
+        System.out.println("whst si");
 
         //Ieterate
 
