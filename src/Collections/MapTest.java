@@ -30,6 +30,7 @@ public class MapTest {
         System.out.println(NewMap);
         System.out.println("size of map" + sizeofmap);
         System.out.println("whst si");
+        System.out.println("what is your name");
 
         //Ieterate
 
