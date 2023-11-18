@@ -40,6 +40,7 @@ public class MapTest {
            String key = entry.getKey();
            Integer data = entry.getValue();
 
+
             System.out.println(key + "------" + data);
         }
     }
