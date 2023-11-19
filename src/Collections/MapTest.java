@@ -33,6 +33,8 @@ public class MapTest {
         System.out.println("what is your name");
         System.out.println("int");
 
+        System.out.println("Aus is now 6 times World champians");
+
         //Ieterate
 
         for(Map.Entry<String ,Integer> entry : NewMap.entrySet()){
